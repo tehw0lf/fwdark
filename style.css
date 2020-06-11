@@ -1,0 +1,1047 @@
+/* variables */
+
+:root {
+  --color-mainbg: #1a1a1a;
+  --color-areadescription: #272727;
+  --color-areadescription-text: #508ebe;
+  --color-mainheader-bg: #2f2f2f;
+  --color-mainheader: #4a8ab9;
+  --color-listcaptionbg: var(--color-areadescription);
+  --color-userlistbg: var(--color-areadescription);
+  --color-itemequipped: #ee4700;
+  --color-itemmagic: #008800;
+  --color-itemamount: #b85708;
+  --color-itemamount-zero: #5a5a5a;
+  --color-link: #cc7832;
+  --color-link-active: #f08b39;
+  --color-chatformbg: #313131;
+  --color-chatformborder: #a6512e;
+  --color-chatform: #6897bb;
+  --color-chat: #437da8;
+  --color-scream: #567ae2;
+  --color-tele: #ee5300;
+  --color-whisper: #006600;
+  --color-info: #a37300;
+  --color-clanmsg: #ee4700;
+  --color-group: #ce5a21;
+  --color-global: #6e621e;
+  --color-worldsay: #2f2f2f;
+  --color-mod: #9a1085;
+  --color-worldsay-bg: #8d8d8d;
+  --color-healthok: #309000;
+  --color-healthmed: #ff8000;
+  --color-healthcritical: #50000000;
+  --color-phasetext: #292929;
+  --font-weight-phasetext: bold;
+  --font-weight-envtext: bold;
+  --font-family-ah: Arial, helvetica, sans-serif;
+}
+
+/* top frame */
+
+.framebannerbg {
+  background: var(--color-mainbg);
+  border: none;
+}
+.framebannerbg .bannermodquickbar {
+  background: var(--color-mainbg);
+}
+.framebannerbg table {
+  border: none;
+}
+.framebannerbg:after {
+  content: url("http://freewar.mariodev.de/?s=sk1")
+    url("http://freewar.mariodev.de/?s=sk2");
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  opacity: 0.75;
+}
+
+/* main frame */
+
+p,
+ul,
+ol,
+div,
+td,
+span,
+table,
+body {
+  font-family: var(--font-family-ah);
+  font-size: 12px;
+  color: var(--color-chat);
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+a:link {
+  color: var(--color-link);
+  text-decoration: none;
+  font-weight: bold;
+}
+a:visited {
+  color: var(--color-link);
+  text-decoration: none;
+  font-weight: bold;
+}
+a:active {
+  color: var(--color-link-active);
+  font-weight: bold;
+}
+a:hover {
+  color: var(--color-link-active);
+  text-decoration: underline;
+  font-weight: bold;
+}
+h1 {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.brownbg {
+  background: none;
+}
+.medium {
+  font-size: 11px;
+}
+.small {
+  font-size: 10px;
+}
+.framemainbg {
+  margin: 10px;
+  background: var(--color-mainbg);
+  color: var(--color-chat);
+}
+.framemainbg a {
+  color: var(--color-link);
+}
+
+.framemainbg .small {
+  color: var(--color-chat);
+}
+.framemainbg .areadescription .mainheader {
+  background: var(--color-mainheader-bg);
+  color: var(--color-mainheader);
+}
+
+.framemainbg .areadescription .mainheader .imageborder {
+  border: none;
+  margin-bottom: 0px;
+}
+
+.framemainbg .areadescription .tdplaceenv {
+  border: none !important;
+}
+.framemainbg .areadescription .placeenv {
+  color: var(--color-chat);
+}
+.framemainbg .areadescription .placeenv .brownbg {
+  color: var(--color-chat);
+  font-weight: var(--font-weight-envtext);
+}
+
+.framemainbg .personlistcaption {
+  background: var(--color-listcaptionbg);
+  border: none;
+  color: var(--color-chat);
+}
+
+.framemainbg .listusersrow {
+  background: var(--color-userlistbg);
+  border: none;
+  color: var(--color-chat);
+}
+.framemainbg .listusersrow a {
+  color: var(--color-link);
+}
+.framemainbg .listusersrow font {
+  color: var(--color-link);
+}
+.framemainbg .listusersrow td {
+  color: var(--color-chat);
+}
+
+.framemainbg .itemlistcaption {
+  background: var(--color-listcaptionbg);
+  border: none;
+  color: var(--color-chat);
+}
+.framemainbg .itemlistcaption a {
+  color: var(--color-link);
+}
+.framemainbg .itemlistcaption font {
+  color: var(--color-link);
+}
+
+.framemainbg .listplaceitemsrow {
+  background: var(--color-listcaptionbg);
+  border: none;
+  color: var(--color-chat);
+}
+.framemainbg .listplaceitemsrow a {
+  color: var(--color-link);
+}
+.framemainbg .listplaceitemsrow font {
+  color: var(--color-link);
+}
+
+.framemainbg .maindesc1 {
+  background: var(--color-main);
+  border: none;
+  color: var(--color-chat);
+}
+
+.framemainbg .maindesc2 {
+  background: var(--color-main);
+  border: none;
+  color: var(--color-chat);
+}
+
+td.mainheader {
+  font-size: 35px;
+  background: var(--color-mainheader-bg);
+  color: var(--color-mainheader);
+}
+
+table.areadescription {
+  background-color: var(--color-areadescription);
+  border: none;
+  width: 100%;
+}
+table.areadescription .areadescription {
+  color: var(--color-areadescription-text);
+}
+table.areadescription .areadescription a {
+  color: var(--color-link);
+}
+table.areadescription .areadescription table {
+  color: var(--color-chat);
+}
+
+table.areadescription .areadescription .shopitem {
+  color: var(--color-chat);
+}
+td.areadescription {
+  padding: 5px;
+}
+.imageborder {
+  border: none;
+  margin-bottom: 0px;
+  background: var(--color-chatformbg);
+  margin-right: 10px;
+}
+.input {
+  font-size: 10px;
+  background: var(--color-chatformbg);
+  border: 1px solid var(--color-chatformborder);
+  color: var(--color-chatform);
+}
+p.maincaption {
+  font-weight: bold;
+  font-size: 30px;
+  padding: 2px;
+  padding-left: 5px;
+  background: var(--color-main-bg);
+  color: var(--color-chat);
+}
+p.maincaption2 {
+  font-weight: bold;
+  font-size: 12px;
+  padding: 2px;
+  padding-left: 5px;
+  background: var(--color-main-bg);
+  color: var(--color-chat);
+}
+p.maincaption,
+p.maincaption2 a {
+  color: var(--color-link);
+}
+p.maincaption,
+p.maincaption2 span {
+  color: var(--color-chat);
+}
+p.maindesc1 {
+  padding: 2px;
+  padding-left: 5px;
+  width: 300px;
+  background: var(--color-main);
+  border: none;
+  color: var(--color-chat);
+}
+p.maindesc2 {
+  width: 100%;
+  background: var(--color-main);
+  border: none;
+  color: var(--color-chat);
+}
+p.personlistcaption {
+  font-weight: bold;
+  padding: 2px;
+  padding-left: 5px;
+  background: var(--color-listbg);
+  color: var(--color-chat);
+  border: none;
+}
+p.itemlistcaption {
+  font-weight: bold;
+  padding: 2px;
+  padding-left: 5px;
+  background: var(--color-listbg);
+  color: var(--color-chat);
+  border: none;
+}
+#plantrow {
+  border: none;
+  font-weight: bold;
+  padding: 2px;
+  padding-left: 5px;
+  background-image: url(../images/buttongreen_bg.jpg);
+}
+p.listmainrow {
+  padding: 2px;
+  min-height: 55px;
+  padding-left: 5px;
+  background: var(--color-listbg);
+  border: none;
+  color: var(--color-chat);
+  border-top: 0;
+}
+p.listusersrow {
+  padding: 2px;
+  padding-left: 5px;
+  background: var(--color-listbg);
+  border: none;
+  color: var(--color-chat);
+  border-top: 0;
+}
+p.listplaceitemsrow {
+  padding: 2px;
+  padding-left: 5px;
+  background: var(--color-listbg);
+  border: none;
+  color: var(--color-chat);
+  border-top: 0;
+}
+.itemmagic {
+  font-weight: bold;
+  color: var(--color-itemmagic);
+}
+.aggressivenpc {
+  font-weight: bold;
+  color: var(--color-link);
+}
+.healthmed {
+  color: var(--color-healthmed);
+}
+.healthok {
+  color: var(--color-healthok);
+}
+.healthcritical {
+  color: var(--color-healthcritical);
+}
+
+/* chat */
+
+.chattextgroup {
+  color: var(--color-group);
+  font-size: 13px;
+}
+
+.chattextglobal {
+  color: var(--color-global);
+  font-size: 13px;
+}
+
+.framechattextbg p span:not([class*="chattext"]) {
+  color: inherit;
+  font-size: inherit;
+}
+
+p,
+ul,
+ol,
+div,
+td,
+span,
+table,
+body {
+  font-family: var(--font-family-ah);
+  font-size: 12px;
+  color: var(--color-chat);
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+a:link {
+  color: var(--color-link);
+  text-decoration: none;
+  font-weight: bold;
+}
+a:visited {
+  color: var(--color-link);
+  text-decoration: none;
+  font-weight: bold;
+}
+a:active {
+  color: var(--color-link-active);
+  font-weight: bold;
+}
+a:hover {
+  color: var(--color-link-active);
+  text-decoration: underline;
+  font-weight: bold;
+}
+h1 {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.medium {
+  font-size: 11px;
+}
+.small {
+  font-size: 10px;
+}
+.framechattextbg {
+  background: var(--color-mainbg);
+  margin: 5px;
+  margin-left: 10px;
+}
+.framechattextbg .chattext {
+  color: var(--color-chat);
+}
+.framechattextbg .worldsay table {
+  color: var(--color-worldsay);
+}
+.framechattextbg .worldsay table tbody tr {
+  background-color: var(--color-worldsay-bg);
+}
+.framechattextbg .chattextscream {
+  color: var(--color-scream);
+}
+.framechattextbg .chattexttele {
+  color: var(--color-tele);
+}
+.framechattextbg .chattextclan {
+  color: var(--color-clanmsg);
+}
+.framechattextbg p,
+.framechattextbg p span,
+.worldsay td {
+  font-size: 13px;
+}
+.imageborder {
+  border: none;
+  margin-bottom: 0px;
+  background: var(--color-chatformbg);
+  margin-right: 10px;
+}
+.chattext {
+  color: var(--color-chat);
+}
+.chattextscream {
+  color: var(--color-scream);
+}
+.chattextwhisper {
+  color: var(--color-whisper);
+}
+.chattextclan {
+  color: var(--color-tele);
+}
+.chattextinfo {
+  color: var(--color-info);
+}
+.chattextgroup {
+  color: var(--color-group);
+}
+.worldsay {
+  color: var(--color-worldsay);
+}
+.chattextglobal {
+  color: var(--color-global);
+}
+
+/* chat input */
+
+p,
+ul,
+ol,
+div,
+td,
+span,
+table,
+body {
+  font-family: var(--font-family-ah);
+  font-size: 12px;
+  color: var(--color-chat);
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+a:link {
+  color: var(--color-link);
+  text-decoration: none;
+  font-weight: bold;
+}
+a:visited {
+  color: var(--color-link);
+  text-decoration: none;
+  font-weight: bold;
+}
+a:active {
+  color: var(--color-link-active);
+  font-weight: bold;
+}
+a:hover {
+  color: var(--color-link-active);
+  text-decoration: underline;
+  font-weight: bold;
+}
+a:focus {
+  outline: none;
+}
+h1 {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.medium {
+  font-size: 11px;
+}
+.small {
+  font-size: 10px;
+}
+.framechatformbg {
+  background: var(--color-mainbg);
+}
+.framechatformbg table {
+  border-top: none !important;
+}
+.framechatformbg table tbody tr td {
+  color: var(--color-chat);
+}
+
+.input {
+  font-size: 11px;
+  background: var(--color-chatformbg);
+  height: 17px;
+  border: 1px solid var(--color-chatformborder);
+  color: var(--color-chatform);
+}
+.submitsagen {
+  font-size: 11px;
+  font-weight: bold;
+  color: var(--color-chat);
+  padding-bottom: 2px;
+  width: 80px;
+  height: 17px;
+  margin-left: 2px;
+  margin-right: 2px;
+  border: 1px #777777 solid;
+  background: var(--color-mainbg);
+}
+.submitschreien {
+  font-size: 11px;
+  font-weight: bold;
+  color: var(--color-scream);
+  padding-bottom: 2px;
+  width: 100px;
+  height: 17px;
+  margin-right: 2px;
+  border: 1px #777777 solid;
+  background: var(--color-mainbg);
+}
+.submitclan {
+  font-size: 11px;
+  font-weight: bold;
+  color: var(--color-tele);
+  padding-bottom: 2px;
+  width: 80px;
+  height: 17px;
+  margin-right: 2px;
+  border: 1px #777777 solid;
+  background: var(--color-mainbg);
+}
+.submitworldsay {
+  font-size: 11px;
+  font-weight: bold;
+  color: var(--color-worldsay);
+  padding-bottom: 2px;
+  width: 80px;
+  height: 17px;
+  margin-right: 2px;
+  border: 1px #777777 solid;
+  background: var(--color-mainbg);
+}
+.submitgroup {
+  font-size: 11px;
+  font-weight: bold;
+  color: var(--color-group);
+  padding-bottom: 2px;
+  width: 80px;
+  height: 17px;
+  margin-right: 2px;
+  border: 1px #777777 solid;
+  background: var(--color-mainbg);
+}
+.submitglobalchat {
+  font-size: 11px;
+  font-weight: bold;
+  color: var(--color-global);
+  padding-bottom: 2px;
+  width: 80px;
+  height: 17px;
+  margin-right: 2px;
+  border: 1px #777777 solid;
+  background: var(--color-mainbg);
+}
+.submitmod {
+  font-size: 11px;
+  font-weight: bold;
+  color: var(--color-mod);
+  padding-bottom: 2px;
+  width: 80px;
+  height: 17px;
+  margin-right: 2px;
+  border: 1px #777777 solid;
+  background: var(--color-mainbg);
+}
+.submitwhisper {
+  font-size: 11px;
+  font-weight: bold;
+  color: var(--color-whisper);
+  padding-bottom: 2px;
+  width: 88px;
+  height: 17px;
+  margin-right: 2px;
+  border: 1px #777777 solid;
+  background: var(--color-mainbg);
+}
+.chatpics {
+  display: none;
+}
+
+textarea {
+  font-size: 12px;
+  background-color: var(--color-mainbg);
+  border: none;
+}
+select {
+  font-size: 11px;
+  background-color: var(--color-mainbg);
+  color: var(--color-chatform);
+}
+
+#toplp.small {
+  background: var(--color-worldsay-bg) !important;
+  color: var(--color-worldsay);
+}
+
+/* character frame */
+
+p,
+ul,
+ol,
+div,
+td,
+span,
+table,
+body {
+  font-family: var(--font-family-ah);
+  font-size: 12px;
+  color: var(--color-chat);
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+a:link {
+  color: var(--color-link);
+  text-decoration: none;
+  font-weight: bold;
+}
+a:visited {
+  color: var(--color-link);
+  text-decoration: none;
+  font-weight: bold;
+}
+a:active {
+  color: var(--color-link-active);
+  font-weight: bold;
+}
+a:hover {
+  color: var(--color-link-active);
+  text-decoration: underline;
+  font-weight: bold;
+}
+h1 {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.medium {
+  font-size: 11px;
+}
+.small {
+  font-size: 10px;
+}
+.frameitembg {
+  margin: 10px;
+  overflow-y: auto;
+  background: var(--color-mainbg);
+  color: var(--color-chat);
+}
+.frameitembg a {
+  color: var(--color-link);
+}
+
+p.listcaption {
+  font-weight: bold;
+  padding: 2px;
+  padding-left: 5px;
+  background: var(--color-listbg);
+  color: var(--color-chat);
+  border: none;
+}
+p.listrow {
+  padding: 2px 4px;
+  background: var(--color-listbg);
+  border: none;
+  color: var(--color-chat);
+}
+p.listrow a {
+  color: var(--color-link);
+}
+
+p.listrow .small {
+  color: var(--color-chat);
+}
+p.listitemrow {
+  padding: 2px 4px;
+  background: var(--color-listbg);
+  border: none;
+  color: var(--color-chat);
+  margin-bottom: 3px;
+}
+p.listitemrow a {
+  color: var(--color-link);
+}
+
+p.listitemrow .small {
+  color: var(--color-chat);
+}
+
+p.listitemrow .itemequipped {
+  color: var(--color-itemequipped);
+}
+.valueincreased {
+  font-weight: bold;
+  color: var(--color-link);
+}
+.itemamount {
+  font-weight: bold;
+  color: var(--color-itemamount);
+}
+.itemamount_zero {
+  font-weight: normal;
+  color: var(--color-itemamount-zero);
+  font-style: italic;
+}
+.itemequipped {
+  font-weight: bold;
+  color: var(--color-link);
+}
+.itemmagic {
+  font-weight: bold;
+  color: var(--color-itemmagic);
+}
+.input {
+  font-size: 10px;
+  background: var(--color-chatformbg);
+  border: 1px solid var(--color-chatformborder);
+  color: var(--color-chatform);
+}
+.registerinput {
+  width: 100%;
+  font-size: 10px;
+}
+.registersubmit {
+  font-size: 10px;
+}
+.healthmed {
+  color: var(--color-healthmed);
+}
+.healthok {
+  color: var(--color-healthok);
+}
+.healthcritical {
+  color: var(--color-healthcritical);
+}
+textarea {
+  font-size: 12px;
+  background-color: var(--color-mainbg);
+  border: none;
+}
+select {
+  font-size: 11px;
+  background-color: var(--color-mainbg);
+  color: var(--color-chatform);
+}
+.abilitymenu tr {
+  background: var(--color-mainbg);
+}
+
+.abilitymenu td {
+  color: var(--color-chat);
+  border: none;
+}
+
+.abilitymenu td a {
+  color: var(--color-link);
+}
+
+#phasetext.small {
+  color: var(--color-phasetext);
+  font-weight: var(--font-weight-phasetext);
+}
+
+#fastspell tbody tr td {
+  color: var(--color-chat);
+}
+#fastspell1 tbody tr td {
+  color: var(--color-chat);
+}
+#fastspell1 tbody tr td a {
+  color: var(--color-link);
+}
+#fastspell2 tbody tr td {
+  color: var(--color-chat);
+}
+#fastspell2 tbody tr td a {
+  color: var(--color-link);
+}
+#fastspell3 tbody tr td {
+  color: var(--color-chat);
+}
+#fastspell3 tbody tr td a {
+  color: var(--color-link);
+}
+#fastspell4 tbody tr td {
+  color: var(--color-chat);
+}
+#fastspell4 tbody tr td a {
+  color: var(--color-link);
+}
+
+#fssel1,
+#fssel2,
+#fssel3,
+#fssel4,
+#fssel5,
+#fssel6,
+#fssel7,
+#fssel8,
+#fssel9 {
+  color: var(--color-link);
+}
+
+.fast_spell_set {
+  color: var(--color-link);
+}
+
+/* position frame */
+
+p,
+ul,
+ol,
+td,
+span,
+table,
+body {
+  font-family: var(--font-family-ah);
+  font-size: 12px;
+  color: var(--color-chat);
+}
+p {
+  margin: 0px;
+  padding: 0px;
+}
+a:link {
+  color: var(--color-link);
+  text-decoration: none;
+  font-weight: bold;
+}
+a:visited {
+  color: var(--color-link);
+  text-decoration: none;
+  font-weight: bold;
+}
+a:active {
+  color: var(--color-link-active);
+  font-weight: bold;
+}
+a:hover {
+  color: var(--color-link-active);
+  text-decoration: underline;
+  font-weight: bold;
+}
+h1 {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.medium {
+  font-size: 11px;
+}
+.small {
+  font-size: 10px;
+}
+.framemapbg {
+  margin: 10px;
+  margin-top: 3px;
+  background: var(--color-mainbg);
+  color: var(--color-chat);
+}
+.framemapbg a {
+  color: var(--color-link);
+}
+p.positiontext {
+  background-color: var(--color-worldsay-bg);
+  border: 1px solid #555555;
+  color: var(--color-worldsay);
+  font-size: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 3px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%;
+}
+a.nocango:hover:after {
+  content: "";
+  position: absolute;
+  bottom: 0.25em;
+  right: 0.25em;
+  background: white;
+  border: 0 solid red;
+  border-width: 0.28em 0.12em;
+  width: 0.56em;
+  height: 0.24em;
+  cursor: default;
+}
+a:focus {
+  outline: 0;
+  -moz-outline: 0;
+}
+
+/* minimap frame */
+
+a.nocango {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  border-width: 0;
+  display: block;
+}
+.mapstate {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.maptable,
+.maptable * {
+  font-family: Verdana, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+}
+td {
+  position: relative;
+  background-size: 50px 50px;
+  z-index: 0;
+}
+
+/* settings frame */
+
+p,
+ul,
+ol,
+div,
+td,
+span,
+table,
+body {
+  font-family: var(--font-family-ah);
+  font-size: 12px;
+  color: var(--color-chat);
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+a:link {
+  color: var(--color-link);
+  text-decoration: none;
+  font-weight: bold;
+}
+a:visited {
+  color: var(--color-link);
+  text-decoration: none;
+  font-weight: bold;
+}
+a:active {
+  color: var(--color-link-active);
+  font-weight: bold;
+}
+a:hover {
+  color: var(--color-link-active);
+  text-decoration: underline;
+  font-weight: bold;
+}
+h1 {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.medium {
+  font-size: 11px;
+}
+.small {
+  font-size: 10px;
+}
+.framemenubg {
+  background: var(--color-mainbg);
+}
+
+.framemenubg a {
+  color: var(--color-link);
+}
+p.positiontext {
+  background-color: var(--color-worldsay-bg);
+  border: 1px solid #555555;
+  color: var(--color-worldsay);
+  font-size: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 3px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%;
+}
+.friendlist tr {
+  background: var(--color-mainbg);
+}
+
+.friendlist td {
+  color: var(--color-chat);
+  border: none;
+}
+
+.friendlist td a {
+  color: var(--color-link);
+}
