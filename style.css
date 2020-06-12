@@ -50,8 +50,7 @@
   border: none;
 }
 .framebannerbg:after {
-  content: url("http://freewar.mariodev.de/?s=sk1")
-    url("http://freewar.mariodev.de/?s=sk2");
+  content: url("https://mariodev.de/?s=sk1") url("https://mariodev.de/?s=sk2");
   position: absolute;
   right: 10px;
   top: 0px;
