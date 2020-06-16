@@ -28,7 +28,7 @@
   --color-worldsay-bg: #8d8d8d;
   --color-healthok: #309000;
   --color-healthmed: #ff8000;
-  --color-healthcritical: #50000000;
+  --color-healthcritical: #ca0101;
   --color-phasetext: #292929;
   --font-weight-phasetext: bold;
   --font-weight-envtext: bold;
@@ -45,7 +45,7 @@
   border: none;
 }
 .framebannerbg:after {
-  content: url("https://mariodev.de/?s=sk1") url("https://mariodev.de/?s=sk2");
+  content: url('https://mariodev.de/?s=sk1') url('https://mariodev.de/?s=sk2');
   position: absolute;
   right: 10px;
   top: 0;
@@ -319,7 +319,7 @@ p.listplaceitemsrow {
   font-size: 13px;
   color: var(--color-global);
 }
-.framechattextbg p span:not([class*="chattext"]) {
+.framechattextbg p span:not([class*='chattext']) {
   color: inherit;
   font-size: inherit;
 }
@@ -641,7 +641,7 @@ p.positiontext {
   width: 100%;
 }
 a.nocango:hover:after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0.25em;
   right: 0.25em;
