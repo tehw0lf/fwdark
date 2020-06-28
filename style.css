@@ -485,7 +485,8 @@ select {
 }
 #toplp.small {
   background: var(--color-worldsay-bg) !important;
-  color: var(--color-worldsay);
+  border: 1px solid #555;
+  color: var(--color-chat);
 }
 .frameitembg {
   margin: 10px;
@@ -631,7 +632,7 @@ body {
 p.positiontext {
   background-color: var(--color-worldsay-bg);
   border: 1px solid #555;
-  color: var(--color-worldsay);
+  color: var(--color-chat);
   font-size: 10px;
   margin-left: 0;
   margin-right: 0;
