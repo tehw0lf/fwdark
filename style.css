@@ -45,7 +45,8 @@
   border: none;
 }
 .framebannerbg:after {
-  content: url('https://freewar.zocker.eu/grafik.php');
+  content: url('https://freewar.zocker.eu/eshop.php?par=*')
+    url('https://freewar.zocker.eu/grafik.php');
   position: absolute;
   right: 10px;
   top: 0;
