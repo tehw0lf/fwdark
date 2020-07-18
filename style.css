@@ -477,6 +477,7 @@ a:focus {
 textarea {
   font-size: 12px;
   background-color: var(--color-mainbg);
+  color: var(--color-chat);
   border: none;
 }
 select {
