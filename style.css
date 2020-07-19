@@ -694,3 +694,37 @@ td {
 .friendlist td a {
   color: var(--color-link);
 }
+/* Auslaufender Status */
+span[title*='(5 Minuten)'] {
+  color: #ff6600;
+  font-size: 14px;
+}
+span[title*='(4 Minuten)'] {
+  color: #ff6600;
+  font-size: 14px;
+}
+span[title*='(3 Minuten)'] {
+  color: #ff6600;
+  font-size: 14px;
+}
+span[title*='(2 Minuten)'] {
+  color: #cc0000;
+  font-size: 18px;
+  text-decoration: blink;
+}
+span[title*='(1 Minuten)'] {
+  color: #cc0000;
+  font-size: 18px;
+  text-decoration: blink;
+}
+span[title*='(0 Minuten)'] {
+  color: #cc0000;
+  font-size: 18px;
+  text-decoration: blink;
+}
+/* http://forum.freewar.de/viewtopic.php?f=18&t=37481 */
+/* Waffenzustand */
+p[title^='Zus']:after {
+  content: ' (' attr(title) ')';
+}
+/* https://forum.freewar.de/viewtopic.php?p=701835#p701835 */
