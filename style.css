@@ -45,8 +45,8 @@
   border: none;
 }
 .framebannerbg:after {
-  content: url('https://freewar.zocker.eu/eshop.php?par=*')
-    url('https://freewar.zocker.eu/grafik.php');
+  content: url("https://freewar.zocker.eu/eshop.php?par=*")
+    url("https://freewar.zocker.eu/grafik.php");
   position: absolute;
   right: 10px;
   top: 0;
@@ -320,7 +320,7 @@ p.listplaceitemsrow {
   font-size: 13px;
   color: var(--color-global);
 }
-.framechattextbg p span:not([class*='chattext']) {
+.framechattextbg p span:not([class*="chattext"]) {
   color: inherit;
   font-size: inherit;
 }
@@ -644,7 +644,7 @@ p.positiontext {
   width: 100%;
 }
 a.nocango:hover:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0.25em;
   right: 0.25em;
@@ -695,36 +695,36 @@ td {
   color: var(--color-link);
 }
 /* Auslaufender Status */
-span[title*='(5 Minuten)'] {
+span[title*="(5 Minuten)"] {
   color: #ff6600;
   font-size: 14px;
 }
-span[title*='(4 Minuten)'] {
+span[title*="(4 Minuten)"] {
   color: #ff6600;
   font-size: 14px;
 }
-span[title*='(3 Minuten)'] {
+span[title*="(3 Minuten)"] {
   color: #ff6600;
   font-size: 14px;
 }
-span[title*='(2 Minuten)'] {
+span[title*="(2 Minuten)"] {
   color: #cc0000;
   font-size: 18px;
   text-decoration: blink;
 }
-span[title*='(1 Minuten)'] {
+span[title*="(1 Minuten)"] {
   color: #cc0000;
   font-size: 18px;
   text-decoration: blink;
 }
-span[title*='(0 Minuten)'] {
+span[title*="(0 Minuten)"] {
   color: #cc0000;
   font-size: 18px;
   text-decoration: blink;
 }
 /* http://forum.freewar.de/viewtopic.php?f=18&t=37481 */
 /* Waffenzustand */
-p[title^='Zus']:after {
-  content: ' (' attr(title) ')';
+p[title^="Zustand"]:after {
+  content: " (" attr(title) ")";
 }
 /* https://forum.freewar.de/viewtopic.php?p=701835#p701835 */
