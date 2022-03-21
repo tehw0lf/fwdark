@@ -142,9 +142,6 @@ h1 {
 .framemainbg .listusersrow a {
   color: var(--color-link);
 }
-.framemainbg .listusersrow font {
-  color: var(--color-link);
-}
 .framemainbg .listusersrow td {
   color: var(--color-chat);
 }
