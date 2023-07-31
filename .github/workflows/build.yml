@@ -15,8 +15,8 @@ jobs:
       - name: Login to GitHub Container Registry
         run: echo ${{ secrets.CR_PAT }} | docker login ghcr.io -u $GITHUB_ACTOR --password-stdin
       - name: Build Docker image
-        run: docker build . -t ghcr.io/tehw0lf/fwdark:$GITHUB_SHA --cache-from ghcr.io/tehw0lf/fwdark:latest
+        run: docker build . -t ghcr.io/$GITHUB_REPOSITORY:$GITHUB_SHA --cache-from ghcr.io/$GITHUB_REPOSITORY:latest
       - name: Tag Docker image
-        run: docker tag ghcr.io/tehw0lf/fwdark:$GITHUB_SHA ghcr.io/tehw0lf/fwdark:latest
+        run: docker tag ghcr.io/$GITHUB_REPOSITORY:$GITHUB_SHA ghcr.io/$GITHUB_REPOSITORY:latest
       - name: Publish Docker image
-        run: docker push ghcr.io/tehw0lf/fwdark
+        run: docker push ghcr.io/$GITHUB_REPOSITORY

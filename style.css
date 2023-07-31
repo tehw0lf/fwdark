@@ -61,7 +61,7 @@ span,
 table,
 body {
   font: 12px var(--font-family-ah);
-  color: var(--color-chat);
+  color: red /* var(--color-chat)*/;
 }
 p {
   margin: 0;
