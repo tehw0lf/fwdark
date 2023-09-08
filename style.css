@@ -731,19 +731,19 @@ p[title^="Zustand"]:after {
 }
 
 /* Schnellangriff größer falls LP OK */
-:root:has(span:matches(.healthok)) .fastattack {
+:root:has(span:matches(.healthok)) :root:has(a:matches(.fastattack)) {
   color: green;
   transform: scale(2);
 }
 
 /* Schnellangriff verstecken falls LP kritisch */
-:root:has(span:matches(.healthmed)) .fastattack {
+:root:has(span:matches(.healthmed)) :root:has(a:matches(.fastattack)) {
   color: yellow;
   transform: scale(1);
 }
 
 /* Schnellangriff verstecken falls LP kritisch */
-:root:has(span:matches(.healthcritical)) .fastattack {
+:root:has(span:matches(.healthcritical)) :root:has(a:matches(.fastattack)) {
   color: red;
   transform: scale(0.1);
 }
