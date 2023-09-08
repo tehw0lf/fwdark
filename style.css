@@ -691,6 +691,7 @@ td {
 .friendlist td a {
   color: var(--color-link);
 }
+
 /* Auslaufender Status */
 span[title*="(5 Minuten)"] {
   color: #ff6600;
@@ -714,14 +715,35 @@ span[title*="(1 Minuten)"] {
   font-size: 18px;
   text-decoration: blink;
 }
+
+/* Restdauer
+   http://forum.freewar.de/viewtopic.php?f=18&t=37481 */
 span[title*="(0 Minuten)"] {
   color: #cc0000;
   font-size: 18px;
   text-decoration: blink;
 }
-/* http://forum.freewar.de/viewtopic.php?f=18&t=37481 */
-/* Waffenzustand */
+
+/* Waffenzustand
+   https://forum.freewar.de/viewtopic.php?p=701835#p701835 */
 p[title^="Zustand"]:after {
   content: " (" attr(title) ")";
 }
-/* https://forum.freewar.de/viewtopic.php?p=701835#p701835 */
+
+/* Schnellangriff größer falls LP OK */
+:root:has(span:matches(.healthok)) .fastattack {
+  color: green;
+  transform: scale(2);
+}
+
+/* Schnellangriff verstecken falls LP kritisch */
+:root:has(span:matches(.healthmed)) .fastattack {
+  color: yellow;
+  transform: scale(1);
+}
+
+/* Schnellangriff verstecken falls LP kritisch */
+:root:has(span:matches(.healthcritical)) .fastattack {
+  color: red;
+  transform: scale(0.1);
+}
