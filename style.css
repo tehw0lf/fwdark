@@ -33,6 +33,7 @@
   --font-weight-phasetext: bold;
   --font-weight-envtext: bold;
   --font-family-ah: Arial, helvetica, sans-serif;
+  --health: "healthok";
 }
 .framebannerbg {
   background: var(--color-mainbg);
@@ -728,22 +729,4 @@ span[title*="(0 Minuten)"] {
    https://forum.freewar.de/viewtopic.php?p=701835#p701835 */
 p[title^="Zustand"]:after {
   content: " (" attr(title) ")";
-}
-
-/* Schnellangriff größer falls LP OK */
-:root:has(span:matches(.healthok)) :root:has(a:matches(.fastattack)) {
-  color: green;
-  transform: scale(2);
-}
-
-/* Schnellangriff verstecken falls LP kritisch */
-:root:has(span:matches(.healthmed)) :root:has(a:matches(.fastattack)) {
-  color: yellow;
-  transform: scale(1);
-}
-
-/* Schnellangriff verstecken falls LP kritisch */
-:root:has(span:matches(.healthcritical)) :root:has(a:matches(.fastattack)) {
-  color: red;
-  transform: scale(0.1);
 }
