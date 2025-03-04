@@ -16,3 +16,4 @@ jobs:
       packages: write
     with:
       event_name: ${{ github.event_name }}
+      docker_meta: '[{"name":"fwdark","file":"Dockerfile"}]'
