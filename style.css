@@ -15,7 +15,7 @@
   --color-chatformbg: #313131;
   --color-chatformborder: #a6512e;
   --color-chatform: #6897bb;
-  --color-chat: #ca0101;
+  --color-chat: #437da8;
   --color-scream: #567ae2;
   --color-tele: #ee5300;
   --color-whisper: #060;
@@ -29,6 +29,7 @@
   --color-healthok: #309000;
   --color-healthmed: #ff8000;
   --color-healthcritical: #ca0101;
+  --color-chattext: #ca0101;
   --color-phasetext: #292929;
   --font-weight-phasetext: bold;
   --font-weight-envtext: bold;
@@ -349,9 +350,9 @@ p.listplaceitemsrow {
 .worldsay td {
   font-size: 13px;
 }
-.chattext {
+.chattext i {
   font-size: 15px;
-  color: var(--color-chat);
+  color: var(--color-chattext);
 }
 .chattextscream {
   color: var(--color-scream);
