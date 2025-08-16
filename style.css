@@ -36,24 +36,28 @@
   --font-family-ah: Arial, helvetica, sans-serif;
   --health: "healthok";
 }
+
 .framebannerbg {
   background: var(--color-mainbg);
   border: none;
 }
+
 .framebannerbg .bannermodquickbar {
   background: var(--color-mainbg);
 }
+
 .framebannerbg table {
   border: none;
 }
+
 .framebannerbg:after {
-  content: url("https://freewar.zocker.eu/eshop.php?par=*")
-    url("https://freewar.zocker.eu/grafik.php");
+  content: url("https://freewar.zocker.eu/eshop.php?par=*") url("https://freewar.zocker.eu/grafik.php");
   position: absolute;
   right: 10px;
   top: 0;
   opacity: 0.75;
 }
+
 p,
 ul,
 ol,
@@ -65,151 +69,189 @@ body {
   font: 12px var(--font-family-ah);
   color: var(--color-chat);
 }
+
 p {
   margin: 0;
   padding: 0;
 }
+
 a:link {
   color: var(--color-link);
   text-decoration: none;
   font-weight: bold;
 }
+
 a:visited {
   color: var(--color-link);
   text-decoration: none;
   font-weight: bold;
 }
+
 a:active {
   color: var(--color-link-active);
   font-weight: bold;
 }
+
 a:hover {
   color: var(--color-link-active);
   text-decoration: underline;
   font-weight: bold;
 }
+
 h1 {
   font-size: 12px;
   font-weight: bold;
   margin-bottom: 0;
 }
+
 .brownbg {
   background: none;
 }
+
 .medium {
   font-size: 11px;
 }
+
 .small {
   font-size: 10px;
 }
+
 .framemainbg {
   margin: 10px;
   background: var(--color-mainbg);
   color: var(--color-chat);
 }
+
 .framemainbg a {
   color: var(--color-link);
 }
+
 .framemainbg .small {
   color: var(--color-chat);
 }
+
 .framemainbg .areadescription .mainheader {
   background: var(--color-mainheader-bg);
   color: var(--color-mainheader);
 }
+
 .framemainbg .areadescription .mainheader .imageborder {
   border: none;
   margin-bottom: 0;
 }
+
 .framemainbg .areadescription .tdplaceenv {
   border: none !important;
 }
+
 .framemainbg .areadescription .placeenv {
   color: var(--color-chat);
 }
+
 .framemainbg .areadescription .placeenv .brownbg {
   color: var(--color-chat);
   font-weight: var(--font-weight-envtext);
 }
+
 .framemainbg .personlistcaption {
   background: var(--color-listcaptionbg);
   border: none;
   color: var(--color-chat);
 }
+
 .framemainbg .listusersrow {
   background: var(--color-userlistbg);
   border: none;
   color: var(--color-chat);
 }
+
 .framemainbg .listusersrow a {
   color: var(--color-link);
 }
+
 .framemainbg .listusersrow td {
   color: var(--color-chat);
 }
+
 .framemainbg .itemlistcaption {
   background: var(--color-listcaptionbg);
   border: none;
   color: var(--color-chat);
 }
+
 .framemainbg .itemlistcaption a {
   color: var(--color-link);
 }
+
 .framemainbg .itemlistcaption font {
   color: var(--color-link);
 }
+
 .framemainbg .listplaceitemsrow {
   background: var(--color-listcaptionbg);
   border: none;
   color: var(--color-chat);
 }
+
 .framemainbg .listplaceitemsrow a {
   color: var(--color-link);
 }
+
 .framemainbg .listplaceitemsrow font {
   color: var(--color-link);
 }
+
 .framemainbg .maindesc1 {
   background: var(--color-main);
   border: none;
   color: var(--color-chat);
 }
+
 .framemainbg .maindesc2 {
   background: var(--color-main);
   border: none;
   color: var(--color-chat);
 }
+
 td.mainheader {
   font-size: 35px;
   background: var(--color-mainheader-bg);
   color: var(--color-mainheader);
 }
+
 table.areadescription {
   background-color: var(--color-areadescription);
   border: none;
   width: 100%;
 }
+
 table.areadescription .areadescription {
   color: var(--color-areadescription-text);
 }
+
 table.areadescription .areadescription a {
   color: var(--color-link);
 }
+
 table.areadescription .areadescription table {
   color: var(--color-chat);
 }
+
 table.areadescription .areadescription .shopitem {
   color: var(--color-chat);
 }
+
 td.areadescription {
   padding: 5px;
 }
+
 .imageborder {
   border: none;
   margin-bottom: 0;
   background: var(--color-chatformbg);
   margin-right: 10px;
 }
+
 .input {
   background: var(--color-chatformbg) var(--color-chatformbg);
   font-size: 10px;
@@ -217,6 +259,7 @@ td.areadescription {
   border: 1px solid var(--color-chatformborder);
   color: var(--color-chatform);
 }
+
 p.maincaption {
   font-weight: bold;
   font-size: 30px;
@@ -224,6 +267,7 @@ p.maincaption {
   background: var(--color-main-bg);
   color: var(--color-chat);
 }
+
 p.maincaption2 {
   font-weight: bold;
   font-size: 12px;
@@ -231,14 +275,17 @@ p.maincaption2 {
   background: var(--color-main-bg);
   color: var(--color-chat);
 }
+
 p.maincaption,
 p.maincaption2 a {
   color: var(--color-link);
 }
+
 p.maincaption,
 p.maincaption2 span {
   color: var(--color-chat);
 }
+
 p.maindesc1 {
   padding: 2px 2px 2px 5px;
   width: 300px;
@@ -246,12 +293,14 @@ p.maindesc1 {
   border: none;
   color: var(--color-chat);
 }
+
 p.maindesc2 {
   width: 100%;
   background: var(--color-main);
   border: none;
   color: var(--color-chat);
 }
+
 p.personlistcaption {
   font-weight: bold;
   padding: 2px 2px 2px 5px;
@@ -259,6 +308,7 @@ p.personlistcaption {
   color: var(--color-chat);
   border: none;
 }
+
 p.itemlistcaption {
   font-weight: bold;
   padding: 2px 2px 2px 5px;
@@ -266,12 +316,14 @@ p.itemlistcaption {
   color: var(--color-chat);
   border: none;
 }
+
 #plantrow {
   border: none;
   font-weight: bold;
   padding: 2px 2px 2px 5px;
   background-image: url(../images/buttongreen_bg.jpg);
 }
+
 p.listmainrow {
   padding: 2px 2px 2px 5px;
   min-height: 55px;
@@ -280,6 +332,7 @@ p.listmainrow {
   color: var(--color-chat);
   border-top: 0;
 }
+
 p.listusersrow {
   padding: 2px 2px 2px 5px;
   background: var(--color-listbg);
@@ -287,6 +340,7 @@ p.listusersrow {
   color: var(--color-chat);
   border-top: 0;
 }
+
 p.listplaceitemsrow {
   padding: 2px 2px 2px 5px;
   background: var(--color-listbg);
@@ -294,84 +348,109 @@ p.listplaceitemsrow {
   color: var(--color-chat);
   border-top: 0;
 }
+
 .itemmagic {
   font-weight: bold;
   color: var(--color-itemmagic);
 }
+
 .aggressivenpc {
   font-weight: bold;
   color: var(--color-link);
 }
+
 .healthmed {
   color: var(--color-healthmed);
 }
+
 .healthok {
   color: var(--color-healthok);
 }
+
 .healthcritical {
   color: var(--color-healthcritical);
 }
+
 .chattextgroup {
   font-size: 13px;
   color: var(--color-group);
 }
+
 .chattextglobal {
   font-size: 13px;
   color: var(--color-global);
 }
+
 .framechattextbg p span:not([class*="chattext"]) {
   color: inherit;
   font-size: inherit;
 }
+
 .framechattextbg {
   background: var(--color-mainbg);
   margin: 5px 5px 5px 10px;
 }
+
 .framechattextbg .chattext {
   color: var(--color-chat);
 }
+
 .framechattextbg .worldsay table {
   color: var(--color-worldsay);
 }
+
 .framechattextbg .worldsay table tbody tr {
   background-color: var(--color-worldsay-bg);
 }
+
 .framechattextbg .chattextscream {
   color: var(--color-scream);
 }
+
 .framechattextbg .chattexttele {
   color: var(--color-tele);
 }
+
 .framechattextbg .chattextclan {
   color: var(--color-clanmsg);
 }
+
 .framechattextbg p,
 .framechattextbg p span,
 .worldsay td {
   font-size: 13px;
 }
+
 .framechattextbg .chattext i {
+  font-size: 15px;
   color: var(--color-chattext);
 }
+
 .chattextwhisper {
   color: var(--color-whisper);
 }
+
 .chattextinfo {
   color: var(--color-info);
 }
+
 a:focus {
   outline: 0;
   -moz-outline: 0;
 }
+
 .framechatformbg {
   background: var(--color-mainbg);
 }
+
 .framechatformbg table {
   border-top: none;
 }
+
 .framechatformbg table tbody tr td {
   color: var(--color-chat);
 }
+
 .submitsagen {
   font-size: 11px;
   font-weight: bold;
@@ -384,6 +463,7 @@ a:focus {
   border: 1px #777 solid;
   background: var(--color-mainbg);
 }
+
 .submitschreien {
   font-size: 11px;
   font-weight: bold;
@@ -395,6 +475,7 @@ a:focus {
   border: 1px #777 solid;
   background: var(--color-mainbg);
 }
+
 .submitclan {
   font-size: 11px;
   font-weight: bold;
@@ -406,6 +487,7 @@ a:focus {
   border: 1px #777 solid;
   background: var(--color-mainbg);
 }
+
 .submitworldsay {
   font-size: 11px;
   font-weight: bold;
@@ -417,6 +499,7 @@ a:focus {
   border: 1px #777 solid;
   background: var(--color-mainbg);
 }
+
 .submitgroup {
   font-size: 11px;
   font-weight: bold;
@@ -428,6 +511,7 @@ a:focus {
   border: 1px #777 solid;
   background: var(--color-mainbg);
 }
+
 .submitglobalchat {
   font-size: 11px;
   font-weight: bold;
@@ -439,6 +523,7 @@ a:focus {
   border: 1px #777 solid;
   background: var(--color-mainbg);
 }
+
 .submitmod {
   font-size: 11px;
   font-weight: bold;
@@ -450,6 +535,7 @@ a:focus {
   border: 1px #777 solid;
   background: var(--color-mainbg);
 }
+
 .submitwhisper {
   font-size: 11px;
   font-weight: bold;
@@ -461,34 +547,41 @@ a:focus {
   border: 1px #777 solid;
   background: var(--color-mainbg);
 }
+
 .chatpics {
   display: none;
 }
+
 textarea {
   font-size: 12px;
   background-color: var(--color-mainbg);
   color: var(--color-chat);
   border: none;
 }
+
 select {
   font-size: 11px;
   background-color: var(--color-mainbg);
   color: var(--color-chatform);
 }
+
 #toplp.small {
   background: var(--color-worldsay-bg) !important;
   border: 1px solid #555;
   color: var(--color-chat);
 }
+
 .frameitembg {
   margin: 10px;
   overflow-y: auto;
   background: var(--color-mainbg);
   color: var(--color-chat);
 }
+
 .frameitembg a {
   color: var(--color-link);
 }
+
 p.listcaption {
   font-weight: bold;
   padding: 2px 2px 2px 5px;
@@ -496,18 +589,22 @@ p.listcaption {
   color: var(--color-chat);
   border: none;
 }
+
 p.listrow {
   padding: 2px 4px;
   background: var(--color-listbg);
   border: none;
   color: var(--color-chat);
 }
+
 p.listrow a {
   color: var(--color-link);
 }
+
 p.listrow .small {
   color: var(--color-chat);
 }
+
 p.listitemrow {
   padding: 2px 4px;
   background: var(--color-listbg);
@@ -515,80 +612,103 @@ p.listitemrow {
   color: var(--color-chat);
   margin-bottom: 3px;
 }
+
 p.listitemrow a {
   color: var(--color-link);
 }
+
 p.listitemrow .small {
   color: var(--color-chat);
 }
+
 p.listitemrow .itemequipped {
   color: var(--color-itemequipped);
 }
+
 .valueincreased {
   font-weight: bold;
   color: var(--color-link);
 }
+
 .itemamount {
   font-weight: bold;
   color: var(--color-itemamount);
 }
+
 .itemamount_zero {
   font-weight: normal;
   color: var(--color-itemamount-zero);
   font-style: italic;
 }
+
 .itemequipped {
   font-weight: bold;
   color: var(--color-link);
 }
+
 .registerinput {
   width: 100%;
   font-size: 10px;
 }
+
 .registersubmit {
   font-size: 10px;
 }
+
 .abilitymenu tr {
   background: var(--color-mainbg);
 }
+
 .abilitymenu td {
   color: var(--color-chat);
   border: none;
 }
+
 .abilitymenu td a {
   color: var(--color-link);
 }
+
 #phasetext.small {
   color: var(--color-phasetext);
   font-weight: var(--font-weight-phasetext);
 }
+
 #fastspell tbody tr td {
   color: var(--color-chat);
 }
+
 #fastspell1 tbody tr td {
   color: var(--color-chat);
 }
+
 #fastspell1 tbody tr td a {
   color: var(--color-link);
 }
+
 #fastspell2 tbody tr td {
   color: var(--color-chat);
 }
+
 #fastspell2 tbody tr td a {
   color: var(--color-link);
 }
+
 #fastspell3 tbody tr td {
   color: var(--color-chat);
 }
+
 #fastspell3 tbody tr td a {
   color: var(--color-link);
 }
+
 #fastspell4 tbody tr td {
   color: var(--color-chat);
 }
+
 #fastspell4 tbody tr td a {
   color: var(--color-link);
 }
+
 #fssel1,
 #fssel2,
 #fssel3,
@@ -600,9 +720,11 @@ p.listitemrow .itemequipped {
 #fssel9 {
   color: var(--color-link);
 }
+
 .fast_spell_set {
   color: var(--color-link);
 }
+
 p,
 ul,
 ol,
@@ -613,14 +735,17 @@ body {
   font: 12px var(--font-family-ah);
   color: var(--color-chat);
 }
+
 .framemapbg {
   margin: 3px 10px 10px;
   background: var(--color-mainbg);
   color: var(--color-chat);
 }
+
 .framemapbg a {
   color: var(--color-link);
 }
+
 p.positiontext {
   background-color: var(--color-worldsay-bg);
   border: 1px solid #555;
@@ -633,6 +758,7 @@ p.positiontext {
   padding-right: 0;
   width: 100%;
 }
+
 a.nocango:hover:after {
   content: "";
   position: absolute;
@@ -645,6 +771,7 @@ a.nocango:hover:after {
   height: 0.24em;
   cursor: default;
 }
+
 a.nocango {
   background: transparent;
   height: 100%;
@@ -652,6 +779,7 @@ a.nocango {
   border-width: 0;
   display: block;
 }
+
 .mapstate {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -659,28 +787,35 @@ a.nocango {
   -ms-user-select: none;
   user-select: none;
 }
+
 .maptable,
 .maptable * {
   font: 700 17px Verdana, sans-serif;
 }
+
 td {
   position: relative;
   background-size: 50px 50px;
   z-index: 0;
 }
+
 .framemenubg {
   background: var(--color-mainbg);
 }
+
 .framemenubg a {
   color: var(--color-link);
 }
+
 .friendlist tr {
   background: var(--color-mainbg);
 }
+
 .friendlist td {
   color: var(--color-chat);
   border: none;
 }
+
 .friendlist td a {
   color: var(--color-link);
 }
@@ -690,19 +825,23 @@ span[title*="(5 Minuten)"] {
   color: #ff6600;
   font-size: 14px;
 }
+
 span[title*="(4 Minuten)"] {
   color: #ff6600;
   font-size: 14px;
 }
+
 span[title*="(3 Minuten)"] {
   color: #ff6600;
   font-size: 14px;
 }
+
 span[title*="(2 Minuten)"] {
   color: #cc0000;
   font-size: 18px;
   text-decoration: blink;
 }
+
 span[title*="(1 Minuten)"] {
   color: #cc0000;
   font-size: 18px;
