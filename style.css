@@ -350,24 +350,14 @@ p.listplaceitemsrow {
 .worldsay td {
   font-size: 13px;
 }
-.chattext i {
-  font-size: 15px;
+.framechattextbg .chattext i {
   color: var(--color-chattext);
-}
-.chattextscream {
-  color: var(--color-scream);
 }
 .chattextwhisper {
   color: var(--color-whisper);
 }
-.chattextclan {
-  color: var(--color-tele);
-}
 .chattextinfo {
   color: var(--color-info);
-}
-.worldsay {
-  color: var(--color-worldsay);
 }
 a:focus {
   outline: 0;
