@@ -29,7 +29,6 @@
   --color-healthok: #309000;
   --color-healthmed: #ff8000;
   --color-healthcritical: #ca0101;
-  --color-chattext: #ca0101;
   --color-phasetext: #292929;
   --font-weight-phasetext: bold;
   --font-weight-envtext: bold;
@@ -423,7 +422,7 @@ p.listplaceitemsrow {
 
 .framechattextbg .chattext i {
   font-size: 15px;
-  color: var(--color-chattext);
+  color: var(--color-chat);
 }
 
 .chattextwhisper {
