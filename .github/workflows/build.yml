@@ -20,3 +20,4 @@ jobs:
     with:
       docker_meta: '[{"name":"fwdark","file":"Dockerfile"}]'
       platforms: "linux/arm64"
+      tool: "npm"
