@@ -899,16 +899,27 @@ span[title*="(3 Minuten)"] {
   font-size: 14px;
 }
 
+/* `text-decoration: blink` was dropped from CSS 2.1 and no current browser
+   renders it, so the last three minutes of a timer never actually blinked.
+   An animation does what the declaration was asking for. Held still for
+   anyone who asked the OS to reduce motion — a blinking countdown is exactly
+   the kind of thing that setting exists for. */
+@keyframes fw-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
 span[title*="(2 Minuten)"] {
   color: var(--color-expired);
   font-size: 18px;
-  text-decoration: blink;
+  animation: fw-blink 1s step-end infinite;
 }
 
 span[title*="(1 Minuten)"] {
   color: var(--color-expired);
   font-size: 18px;
-  text-decoration: blink;
+  animation: fw-blink 1s step-end infinite;
 }
 
 /* Restdauer
@@ -916,11 +927,19 @@ span[title*="(1 Minuten)"] {
 span[title*="(0 Minuten)"] {
   color: var(--color-expired);
   font-size: 18px;
-  text-decoration: blink;
+  animation: fw-blink 1s step-end infinite;
 }
 
 /* Waffenzustand
    https://forum.freewar.de/viewtopic.php?p=701835#p701835 */
 p[title^="Zustand"]:after {
   content: " (" attr(title) ")";
+}
+
+@media (prefers-reduced-motion: reduce) {
+  span[title*="(2 Minuten)"],
+  span[title*="(1 Minuten)"],
+  span[title*="(0 Minuten)"] {
+    animation: none;
+  }
 }
