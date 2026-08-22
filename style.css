@@ -1,39 +1,103 @@
 :root {
-  --color-mainbg: #1a1a1a;
-  --color-areadescription: #272727;
+  /* ------------------------------------------------------------------
+     Brand tokens
+
+     Shared with tehwolf.de, where the same values live as --tw-*. The two
+     were arrived at independently — this stylesheet and that site kept
+     reaching for the same orange and the same ground — so they are named
+     here rather than left to coincide.
+
+     Everything below this block derives from these. To reskin fwdark,
+     change these eleven values and nothing else.
+     ------------------------------------------------------------------ */
+
+  /* Identity */
+  --brand-grey: #8e8e8e;          /* the wolf mark; --tw-brand */
+
+  /* Ground and surfaces */
+  --brand-bg: #1a1a1a;            /* --tw-neutral-900 */
+  --brand-surface: #272727;       /* --tw-neutral-800 */
+  --brand-surface-alt: #2d2d2d;
+  --brand-raised: #2f2f2f;        /* --tw-neutral-750 */
+  --brand-control: #313131;
+  --brand-border: #555;
+  --brand-border-soft: #777;
+
+  /* Ink */
+  --brand-text: #437da8;          /* --tw-text-dim */
+  --brand-text-bright: #6897bb;
+
+  /* Accent — the burnt orange, in both projects */
+  --brand-accent: #cc7832;        /* --tw-accent */
+  --brand-accent-hover: #f08b39;  /* --tw-accent-hover */
+  --brand-accent-deep: #a6512e;
+
+  /* Status */
+  --brand-ok: #309000;
+  --brand-warn: #ff8000;
+  --brand-danger: #ca0101;
+  --brand-alert: #ee4700;
+
+  /* ------------------------------------------------------------------
+     Game roles — what each brand value means inside Freewar.
+     ------------------------------------------------------------------ */
+
+  --color-mainbg: var(--brand-bg);
+  --color-areadescription: var(--brand-surface);
   --color-areadescription-text: #508ebe;
-  --color-mainheader-bg: #2f2f2f;
+  --color-mainheader-bg: var(--brand-raised);
   --color-mainheader: #4a8ab9;
   --color-listcaptionbg: var(--color-areadescription);
   --color-userlistbg: var(--color-areadescription);
-  --color-itemequipped: #ee4700;
+  --color-itemequipped: var(--brand-alert);
   --color-itemmagic: #080;
   --color-itemamount: #b85708;
   --color-itemamount-zero: #5a5a5a;
-  --color-link: #cc7832;
-  --color-link-active: #f08b39;
-  --color-chatformbg: #313131;
-  --color-chatformborder: #a6512e;
-  --color-chatform: #6897bb;
-  --color-chat: #437da8;
+  --color-link: var(--brand-accent);
+  --color-link-active: var(--brand-accent-hover);
+  --color-chatformbg: var(--brand-control);
+  --color-chatformborder: var(--brand-accent-deep);
+  --color-chatform: var(--brand-text-bright);
+  --color-chat: var(--brand-text);
   --color-scream: #567ae2;
   --color-tele: #ee5300;
   --color-whisper: #060;
   --color-info: #a37300;
-  --color-clanmsg: #ee4700;
+  --color-clanmsg: var(--brand-alert);
   --color-group: #ce5a21;
   --color-global: #6e621e;
-  --color-worldsay: #2f2f2f;
+  --color-worldsay: var(--brand-raised);
   --color-mod: #9a1085;
-  --color-worldsay-bg: #2d2d2d;
-  --color-healthok: #309000;
-  --color-healthmed: #ff8000;
-  --color-healthcritical: #ca0101;
+  --color-worldsay-bg: var(--brand-surface-alt);
+  --color-healthok: var(--brand-ok);
+  --color-healthmed: var(--brand-warn);
+  --color-healthcritical: var(--brand-danger);
   --color-phasetext: #292929;
+
+  /* Main panels and list rows.
+
+     These three were referenced by fourteen rules but never defined, so every
+     one of those backgrounds resolved to transparent and let the game's own
+     chrome through. Bound here to the tones the surrounding rules already use.
+     */
+  --color-main: var(--brand-surface);
+  --color-main-bg: var(--brand-raised);
+  --color-listbg: var(--color-areadescription);
+
+  /* Borders drawn over the game's own chrome */
+  --color-border: var(--brand-border);
+  --color-border-soft: var(--brand-border-soft);
+
+  /* Timers counting down to zero: warning, then critical */
+  --color-expiring: #ff6600;
+  --color-expired: #cc0000;
+
+  /* Marker drawn on tiles that cannot be entered */
+  --color-nocango: #fff;
+
   --font-weight-phasetext: bold;
   --font-weight-envtext: bold;
   --font-family-ah: Arial, helvetica, sans-serif;
-  --health: "healthok";
 }
 
 .framebannerbg {
@@ -459,7 +523,7 @@ a:focus {
   height: 17px;
   margin-left: 2px;
   margin-right: 2px;
-  border: 1px #777 solid;
+  border: 1px var(--color-border-soft) solid;
   background: var(--color-mainbg);
 }
 
@@ -471,7 +535,7 @@ a:focus {
   width: 100px;
   height: 17px;
   margin-right: 2px;
-  border: 1px #777 solid;
+  border: 1px var(--color-border-soft) solid;
   background: var(--color-mainbg);
 }
 
@@ -483,7 +547,7 @@ a:focus {
   width: 80px;
   height: 17px;
   margin-right: 2px;
-  border: 1px #777 solid;
+  border: 1px var(--color-border-soft) solid;
   background: var(--color-mainbg);
 }
 
@@ -495,7 +559,7 @@ a:focus {
   width: 80px;
   height: 17px;
   margin-right: 2px;
-  border: 1px #777 solid;
+  border: 1px var(--color-border-soft) solid;
   background: var(--color-mainbg);
 }
 
@@ -507,7 +571,7 @@ a:focus {
   width: 80px;
   height: 17px;
   margin-right: 2px;
-  border: 1px #777 solid;
+  border: 1px var(--color-border-soft) solid;
   background: var(--color-mainbg);
 }
 
@@ -519,7 +583,7 @@ a:focus {
   width: 80px;
   height: 17px;
   margin-right: 2px;
-  border: 1px #777 solid;
+  border: 1px var(--color-border-soft) solid;
   background: var(--color-mainbg);
 }
 
@@ -531,7 +595,7 @@ a:focus {
   width: 80px;
   height: 17px;
   margin-right: 2px;
-  border: 1px #777 solid;
+  border: 1px var(--color-border-soft) solid;
   background: var(--color-mainbg);
 }
 
@@ -543,7 +607,7 @@ a:focus {
   width: 88px;
   height: 17px;
   margin-right: 2px;
-  border: 1px #777 solid;
+  border: 1px var(--color-border-soft) solid;
   background: var(--color-mainbg);
 }
 
@@ -566,7 +630,7 @@ select {
 
 #toplp.small {
   background: var(--color-worldsay-bg) !important;
-  border: 1px solid #555;
+  border: 1px solid var(--color-border);
   color: var(--color-chat);
 }
 
@@ -747,7 +811,7 @@ body {
 
 p.positiontext {
   background-color: var(--color-worldsay-bg);
-  border: 1px solid #555;
+  border: 1px solid var(--color-border);
   color: var(--color-chat);
   font-size: 10px;
   margin-left: 0;
@@ -763,7 +827,7 @@ a.nocango:hover:after {
   position: absolute;
   bottom: 0.25em;
   right: 0.25em;
-  background: #fff;
+  background: var(--color-nocango);
   border: 0 solid red;
   border-width: 0.28em 0.12em;
   width: 0.56em;
@@ -821,28 +885,28 @@ td {
 
 /* Auslaufender Status */
 span[title*="(5 Minuten)"] {
-  color: #ff6600;
+  color: var(--color-expiring);
   font-size: 14px;
 }
 
 span[title*="(4 Minuten)"] {
-  color: #ff6600;
+  color: var(--color-expiring);
   font-size: 14px;
 }
 
 span[title*="(3 Minuten)"] {
-  color: #ff6600;
+  color: var(--color-expiring);
   font-size: 14px;
 }
 
 span[title*="(2 Minuten)"] {
-  color: #cc0000;
+  color: var(--color-expired);
   font-size: 18px;
   text-decoration: blink;
 }
 
 span[title*="(1 Minuten)"] {
-  color: #cc0000;
+  color: var(--color-expired);
   font-size: 18px;
   text-decoration: blink;
 }
@@ -850,7 +914,7 @@ span[title*="(1 Minuten)"] {
 /* Restdauer
    http://forum.freewar.de/viewtopic.php?f=18&t=37481 */
 span[title*="(0 Minuten)"] {
-  color: #cc0000;
+  color: var(--color-expired);
   font-size: 18px;
   text-decoration: blink;
 }
