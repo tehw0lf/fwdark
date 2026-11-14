@@ -18,6 +18,7 @@ jobs:
       packages: write
       security-events: write
       pull-requests: write
+      issues: write
     with:
       docker_meta: '[{"name":"fwdark","file":"Dockerfile"}]'
       platforms: "linux/arm64"
